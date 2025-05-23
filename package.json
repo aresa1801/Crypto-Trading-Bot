@@ -1,11 +1,11 @@
 {
   "name": "aresa-crypto-trading",
   "version": "1.0.0",
-  "description": "Dashboard crypto trading dengan AI Signal dan MeXC API",
+  "description": "Dashboard UI untuk bot trading crypto Aresa",
   "private": true,
   "proxy": "https://your-backend-production.up.railway.app ",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node --openssl-legacy-provider ./node_modules/react-scripts/scripts/start.js",
     "build": "node --openssl-legacy-provider ./node_modules/react-scripts/scripts/build.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -14,12 +14,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
